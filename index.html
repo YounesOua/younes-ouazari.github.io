@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Younes Ouazari — Développeur Web</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Y<span>.</span>O</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:younes_ouazari77@hotmail.com" class="nav-btn">Me contacter</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-text">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Disponible dès Avril 2026
+      </div>
+      <h1>
+        <span>Younes</span>
+        <em class="accent-line">Ouazari</em>
+        <span class="ghost-line">Web Dev.</span>
+      </h1>
+      <div class="hero-sub">
+        <span class="hero-sub-role">// <span>Développeur Web</span> Junior</span>
+        <span class="hero-div"></span>
+        <span style="font-size:.8rem;color:rgba(255,255,255,.28);">MyDigitalSchool</span>
+      </div>
+      <p class="hero-desc">Je construis des interfaces web modernes, rapides du design à la mise en production.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-fire">Voir mes projets ↓</a>
+        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="deco-ring dr1"></div>
+        <div class="deco-ring dr2"></div>
+        <!-- profil image -->
+
+        <div class="avatar-tilt" id="tiltCard">
+             <img src="./assets/bitmo.png" alt="" style="width:400px; height:400px; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats-strip">
+    <div class="stat-block reveal"><div class="stat-num" data-target="4">0</div><div class="stat-lbl">Langages</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-block reveal rd1"><div class="stat-num" data-target="3">0</div><div class="stat-lbl">Diplômes</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-block reveal rd2"><div class="stat-num" data-target="3">0</div><div class="stat-lbl">Projets</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-block reveal rd3"><div class="stat-num" data-target="2">0</div><div class="stat-lbl">Ans d'expérience</div></div>
+  </div>
+
+ <!-- PROJECTS -->
+<section id="projects">
+  <div class="proj-hdr reveal">
+    <div><div class="eyebrow">01 — Projets</div><h2>Ce que j'ai <em>créé</em></h2></div>
+  </div>
+  <div class="proj-grid">
+
+    <!-- Projet 1 : Seval -->
+    <div class="pcard featured reveal">
+      <div class="pthumb" style="background:linear-gradient(135deg,#0a1929,#0d2b4a)">
+        <img src="./assets/logoseval.png" alt="Aperçu Salon de Seval" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+      </div>
+      <div class="pbody">
+        <div class="ptitle">Site Vitrine — Salon de Seval</div>
+        <p class="pdesc">Conception et développement d'une maquette de site web pour le salon. Design responsive sur tous les supports.</p>
+        <div class="ptags"><span class="ptag">WordPress</span><span class="ptag">Elementor</span><span class="ptag">Notion</span><span class="ptag">Figma</span><span class="ptag">PHP</span></div>
+        <a href="./projets/projet-salon_de_seval/index.html" class="plink">Voir le projet →</a>
+      </div>
+    </div>
+
+<!-- Projet 2 : Full-Movie -->
+    <div class="pcard reveal rd1">
+      <div class="pthumb" style="background:linear-gradient(135deg,#0a1929,#0d2b4a)">
+        <img src="./assets/full-movie/mockup1.png" alt="Aperçu Full-Movie" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+      </div>
+      <div class="pbody">
+        <div class="ptitle">Full-Movie — Site de Streaming</div>
+        <p class="pdesc">Projet personnel en cours — Streaming de films à venir.</p>
+        <div class="ptags"><span class="ptag">HTML/CSS/JS</span><span class="ptag">Figma</span><span class="ptag">En cours</span></div>
+        <a href="./projets/projet-Full-movie/index.html" class="plink">Voir le projet →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+  <div class="sec-hdr reveal">
+    <div class="eyebrow">02 — Expériences</div>
+    <h2>Mes experiences <em>pro</em></h2>
+  </div>
+  <div class="exp-layout">
+      <div class="tl-item reveal">
+        <div class="tl-body">
+          <div class="tl-date">Mars. 2026 — Mars 2026</div>
+          <div class="tl-role">Projet-Fil Rouge — Développeur Web</div>
+          <div class="tl-co">SEVAL COIFFURE · Chaumes-en-Brie</div>
+          <ul class="tl-ul">
+            <li>Conception de maquettes UI/UX sur Figma </li>
+            <li>Développement du site vitrine sous WordPress avec Elementor</li>
+            <li>Intégration adaptée mobile</li>
+            <li>Rédaction des contenus et optimisation SEO </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal rd1">
+        <div class="tl-body">
+          <div class="tl-date">Sept. 2020 — Août 2024</div>
+          <div class="tl-role">Vendeur Polyvalent</div>
+          <div class="tl-co">Le Marché d'à Côté · Vaux-le-Pénil</div>
+          <ul class="tl-ul">
+            <li>Accueil et conseil client</li>
+            <li>Gestion des encaissements</li>
+            <li>Mise en rayon et gestion des stocks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FORMATION -->
+  <section id="formation">
+  <div class="sec-hdr reveal">
+    <div class="eyebrow">03 — Formation</div>
+    <h2>Mes <em>formations</em></h2>
+  </div>
+  <div class="edu-grid">
+    <div class="edu-card reveal"><span class="edu-period">2016 – 2018</span><div class="edu-diploma">CAP Vente A</div><div class="edu-school">Lycée la Fayette · Champagne-sur-Seine</div></div>
+    <div class="edu-card reveal rd1"><span class="edu-period">2018 – 2020</span><div class="edu-diploma">Bac Professionnel</div><div class="edu-school">Lycée la Fayette · Champagne-sur-Seine</div></div>
+    <div class="edu-card reveal rd2"><span class="edu-period">2020 – 2022</span><div class="edu-diploma">BTS MCO – IMA</div><div class="edu-school">IMA De Melun</div></div>
+    <div class="edu-card active reveal rd3"><span class="edu-period">2024 – 2026</span><div class="edu-diploma">Bachelor Web Multimédia</div><div class="edu-school">MyDigitalSchool · Dammarie-les-Lys</div><div class="edu-status">En cours</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+  <section id="about">
+    <div class="sec-hdr reveal">
+      <div class="eyebrow">04 — À propos</div>
+      <h2>Qui suis-je ?</h2>
+    </div>
+    <div class="about-layout">
+      <div class="about-left reveal">
+        <div class="av-wrap"><div class="av-ring"></div>
+        
+        <!-- SVG Avatar -->  
+          <div class="av-circle">
+           <img src="./assets/bitmo.png" alt="" style="width:250px; height:250px; object-fit:cover;">
+          </div>
+        </div>
+        <div>
+          <div class="id-name">Younes Ouazari</div>
+          <div class="id-role">Développeur Web Junior</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-bio reveal">
+          <p>Étudiant en informatique à MyDigitalSchool, je suis passionné par le web et les nouvelles technologies. Motivé, curieux et sérieux, je recherche un stage du <strong>20 avril au 19 juin 2026</strong> pour renforcer mes compétences et décrocher une expérience professionnelle concrète.</p>
+          <div class="soft-row">
+            <span class="soft-pill">Curiosité</span>
+            <span class="soft-pill">Dynamisme</span>
+            <span class="soft-pill">Adaptabilité</span>
+            <span class="soft-pill">Esprit d'équipe</span>
+          </div>
+        </div>
+        <div class="reveal rd1">
+          <div class="sk-title">Compétences techniques</div>
+          <div class="skills-grid">
+            <div class="skill-group"><h4>Langages</h4><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span></div></div>
+            <div class="skill-group"><h4>Frameworks</h4><div class="tags"><span class="tag">Bootstrap</span></div></div>
+            <div class="skill-group"><h4>Outils Dev</h4><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Figma</span></div></div>
+            <div class="skill-group"><h4>Autres</h4><div class="tags"><span class="tag">SQL</span><span class="tag">WordPress</span><span class="tag">Godot</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+  <div class="sec-hdr reveal">
+    <div class="eyebrow">05 — Contact</div>
+    <h2>Travaillons <em>ensemble</em></h2>
+  </div>
+ <div class="contact-layout">
+  <div class="contact-left reveal">
+    <div class="avail-pill">
+      
+      <div class="avail-txt">
+        Disponible pour un stage du <strong>20 avr. au 19 juin 2026</strong> — Ouvert à toute opportunité !
+      </div>
+    </div>
+
+    <a href="mailto:younes_ouazari77@hotmail.com" class="clcard">
+      <div class="clcard-body">
+        <div class="clcard-lbl">Email</div>
+        <div class="clcard-val">younes_ouazari77@hotmail.com</div>
+      </div>
+    </a>
+
+    <a href="tel:0664714069" class="clcard">
+      <div class="clcard-body">
+        <div class="clcard-lbl">Téléphone</div>
+        <div class="clcard-val">06 64 71 40 69</div>
+      </div>
+    </a>
+
+    <div class="clcard" style="cursor:none">
+      <div class="clcard-body">
+        <div class="clcard-lbl">Localisation</div>
+        <div class="clcard-val">Seine et Marne, Île-de-France</div>
+      </div>
+    </div>
+
+    <a href="https://linkedin.com" target="_blank" class="clcard">
+      <div class="clcard-body">
+        <div class="clcard-lbl">LinkedIn</div>
+        <div class="clcard-val">Voir mon profil</div>
+      </div>
+    </a>
+  </div>
+
+    <form class="cform reveal rd1" onsubmit="handleSubmit(event)">
+      <div class="cform-title">Envoyer un message </div>
+      <div class="fg-row">
+        <div class="fg"><label for="fn">Nom</label><input type="text" id="fn" placeholder="Nom" required /></div>
+        <div class="fg"><label for="fe">Email</label><input type="email" id="fe" placeholder="@exemple.fr" required /></div>
+      </div>
+      <div class="fg"><label for="fs">Sujet</label><input type="text" id="fs" placeholder="Stage/Alternance" /></div>
+      <div class="fg"><label for="fm">Message</label><textarea id="fm" placeholder="Message" required></textarea></div>
+      <button type="submit" class="btn btn-fire" style="width:fit-content">Envoyer </button>
+    </form>
+  </div>
+</section>
+
+  <!-- MODAL PROJET -->
+  <div id="project-modal" class="pmodal-overlay" onclick="closeModal(event)">
+    <div class="pmodal-box">
+      <button class="pmodal-close" onclick="closeProjectModal()">✕</button>
+      <div class="pmodal-thumb" id="modal-thumb"></div>
+      <div class="pmodal-body">
+        <div class="pmodal-eyebrow" id="modal-tags"></div>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <ul id="modal-details"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#hero" class="footer-logo">Younes<span>.</span>Ouazari</a>
+    <p>© 2026 Younes Ouazari — Développeur Web Junior</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com">LinkedIn</a>
+      <a href="mailto:younes_ouazari77@hotmail.com">Email</a>
+      <a href="#hero">↑ Haut</a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
