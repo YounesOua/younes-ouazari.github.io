@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Younes Ouazari - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Y<span class="text-orange">.</span>O</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#propos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parcours">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<section class="hero d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="hero-title">Younes <span class="text-orange">Ouazari</span></h1>
+                <h2 class="hero-outline">Développeur Web <span class="text-orange">(Junior)</span></h2>                    
+                
+                <div class="mt-4 info-text">
+                    <p class="mb-1 text-orange">< MyDigitalSchool ></p>
+                    <p class="text-secondary w-75">Je construis des interfaces web modernes et rapides, du design à la mise en production.</p>
+                </div>
+
+                <div class="mt-5 d-flex flex-wrap gap-3">
+                    <a href="#projets" class="btn btn-orange">VOIR MES PROJETS</a>
+                    <a href="#contact" class="btn btn-outline-light">ME CONTACTER</a>
+                </div>
+
+                <div class="mt-5">
+                    <p class="text-orange small fw-bold mb-3">TROUVEZ-MOI SUR</p>
+                    <div class="d-flex gap-3">  
+                        <a href="https://www.linkedin.com/in/younes-ouazari-9187932a3/" target="_blank" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/YounesOua" target="_blank" class="social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/younes_ouaz/?hl=fr" target="_blank" class="social-btn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:younes_ouazari77@hotmail.com" class="social-btn" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-none d-lg-block text-center">
+                <img src="./asset/bitmo.png" alt="Younes Ouazari" class="img-fluid custom-avatar">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="propos" class="about-section py-5">
+        <div class="container">        
+            <h2 class="section-title text-center mb-5">01 — À PROPOS</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <img src="./asset/bitmo.png" alt="Younes Ouazari" class="img-fluid about-avatar">
+                </div>
+                <div class="col-lg-8">
+                    <h3 class="about-name">Younes Ouazari</h3>
+                    <p class="about-role text-orange">Développeur Web Junior</p>
+                    <p class="about-description">
+                        Étudiant en informatique à <strong>MyDigitalSchool</strong>, 
+                        je suis passionné par le web et les nouvelles technologies. 
+                        Motivé, curieux et sérieux, je recherche une alternance 
+                        <span class="text-white">pour septembre 2026</span>.
+                    </p>
+
+                    <div class="about-formation mt-4">
+                        <p class="mb-1 fw-bold text-white">Bachelor Web Multimédia</p>
+                        <p class="text-secondary mb-1">MyDigitalSchool · Dammarie-les-Lys</p>
+                        <p class="text-success small fw-bold">EN COURS</p>
+                    </div>
+
+                    <h4 class="mt-4 h5">Soft Skills</h4>
+                    <div class="skills-list mt-3">
+                        <span class="skill-badge">Curiosité</span>
+                        <span class="skill-badge">Dynamisme</span>
+                        <span class="skill-badge">Adaptabilité</span>
+                        <span class="skill-badge">Esprit d'équipe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">02 — MES PROJETS</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="./asset/logoseval.png" class="img-fluid" alt="Salon de Seval">
+                        </div>
+                        <div class="project-body p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h5 text-white">Salon de Seval</h3>
+                            <p class="small">Site vitrine Mobile-first & Maquette UI</p>
+                            <div class="tools-list mb-4">
+                                <span class="tool-badge">WordPress</span>
+                                <span class="tool-badge">Figma</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="https://anais-poitvin.mds-melun.yt/seval/qui-sommes-nous/" target="_blank" class="text-orange text-decoration-none fw-bold">Voir le site</a>
+                                <a href="./projets/seval.html" class="btn btn-outline-light btn-sm">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="./asset/logo_resto.png" class="img-fluid" alt="Resto du Coeur">
+                        </div>
+                        <div class="project-body p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h5 text-white">Resto du Coeur</h3>
+                            <p class="small">Site vitrine & Maquette UI</p>
+                            <div class="tools-list mb-4">
+                                <span class="tool-badge">WordPress</span>
+                                <span class="tool-badge">Figma</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="https://younes-ouazari.mds-melun.yt/LesRestosDuCoeur/" target="_blank" class="text-orange text-decoration-none fw-bold">Voir le site</a>
+                                <a href="./projets/resto.html" class="btn btn-outline-light btn-sm">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="project-img-container">
+                            <img src="./asset/logo_bde.png" class="img-fluid" alt="BDE">
+                        </div>
+                        <div class="project-body p-4 flex-grow-1 d-flex flex-column">
+                            <h3 class="h5 text-white">Bureau Des Etudiants</h3>
+                            <p class="small">Site vitrine institutionnel</p>
+                            <div class="tools-list mb-4">
+                                <span class="tool-badge">WordPress</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="https://younes-ouazari.mds-melun.yt/bde/" target="_blank" class="text-orange text-decoration-none fw-bold">Voir le site</a>
+                                <a href="./projets/bde.html" class="btn btn-outline-light btn-sm">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="py-5 about-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">03 — MES COMPÉTENCES</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="h5 mb-4 text-orange">Développement & Langages</h3>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>HTML & CSS</span><span>80%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 80%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span>50%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 50%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>Php</span><span>50%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 50%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>Bootstrap</span><span>80%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 50%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>SQL</span><span>70%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 70%"></div></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="h5 mb-4 text-orange">Outils & CMS</h3>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>Figma (UI/UX)</span><span>50%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 50%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>WordPress & Wix</span><span>60%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 60%"></div></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1"><span>Git & GitHub</span><span>60%</span></div>
+                        <div class="progress bg-dark" style="height: 6px;"><div class="progress-bar bg-orange" style="width: 60%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="py-5 bg-black">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">04 — MES FORMATIONS </h2>
+            
+            <div class="d-flex justify-content-center mb-5">
+                <div class="nav nav-pills p-1" id="pills-tab" role="tablist">
+                    <button class="nav-link active" id="pills-exp-tab" data-bs-toggle="pill" data-bs-target="#pills-exp" type="button" role="tab">Expériences</button>
+                    <button class="nav-link" id="pills-edu-tab" data-bs-toggle="pill" data-bs-target="#pills-edu" type="button" role="tab">Formations</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-exp" role="tabpanel">
+                    <div class="timeline-container mx-auto" style="max-width: 700px;">
+                        <div class="timeline-item">
+                            <div class="dot-orange"></div>
+                            <span class="text-orange fw-bold small">02/2026 — 03/2026</span>
+                            <h4 class="h5 mt-1">Développeur Web - Salon Seval</h4>
+                            <p class="small text-secondary mb-2">Projet Fil Rouge · Chaumes-en-Brie</p>
+                            <ul class="small text-secondary">
+                                <li>Conception de maquettes UI/UX sur Figma</li>
+                                <li>Développement du site vitrine sous WordPress avec Elementor</li>
+                                <li>Intégration adaptée mobile</li>
+                                <li>Rédaction des contenus et optimisation SEO</li>
+
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot-orange"></div>
+                            <span class="text-orange fw-bold small">09/2020 — 08/2024</span>
+                            <h4 class="h5 mt-1">Vendeur Polyvalent</h4>
+                            <p class="small text-secondary mb-2">Le Marché d'à Côté · Vaux-le-Pénil</p>
+                            <ul class="small text-secondary">
+                                <li>Accueil et conseil client</li>
+                                <li>Gestion des encaissements</li>
+                                <li>Mise en rayon et gestion des stocks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-edu" role="tabpanel">
+                    <div class="timeline-container mx-auto" style="max-width: 700px;">
+                        <div class="timeline-item">
+                            <div class="dot-orange"></div>
+                            <span class="text-orange fw-bold small">2024 — 2026</span>
+                            <h4 class="h5 mt-1">2ème Bachelor Web Multimédia</h4>
+                            <p class="small text-secondary">MyDigitalSchool · Dammarie-les-Lys <br> <span class="text-success">Actuellement</span></p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot-orange"></div>
+                            <span class="text-orange fw-bold small">2020 — 2022</span>
+                            <h4 class="h5 mt-1">BTS MCO</h4>
+                            <p class="small text-secondary">IMA De Melun</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot-orange"></div>
+                            <span class="text-orange fw-bold small">2018 — 2020</span>
+                            <h4 class="h5 mt-1">Bac Professionnel</h4>
+                            <p class="small text-secondary">Lycée la Fayette</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 about-section">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">05 — ME CONTACTER</h2>
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h3 class="h4 mb-4">On travaille ensemble ?</h3>
+                    <p>Actuellement à la recherche d'une alternance pour septembre 2026, je suis ouvert à toute proposition de collaboration.</p>
+                    <div class="mt-4">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt text-orange me-3"></i> Vaux Le Penil, 77000</p>
+                        <p class="mb-2"><i class="fas fa-envelope text-orange me-3"></i> younes_ouazari77@hotmail.com</p>
+                        <p class="mb-2"><i class="fas fa-phone text-orange me-3"></i> 06 64 71 40 69</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-dark border-secondary text-white" placeholder="Nom">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control bg-dark border-secondary text-white" rows="5" placeholder="Votre message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-orange w-100">ENVOYER LE MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top border-secondary text-secondary small">
+        &copy; 2026 Younes Ouazari - Développeur Web Junior.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

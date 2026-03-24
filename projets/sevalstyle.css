@@ -1,0 +1,114 @@
+/* Importation des polices identiques à la page principale */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --orange-brand: #ff6b35;
+    --dark-bg: #0a0b10;
+    --text-gray: #cfcfcf;
+}
+
+/* Base & Typographie */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+h1, h2, h3, h4, .section-title {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.text-orange{
+    color: var(--orange-brand);
+}
+/* Hero Section du Projet */
+.proj-hero {
+    background: linear-gradient(to bottom, #111218, #0a0b10);
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+
+/* Éléments techniques (Labels) */
+.proj-eyebrow, .role-card span, .process-timeline h5, .skill-badge {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+.skill-badge {
+    background-color: rgba(255,255,255,0.05);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-gray);
+}
+
+/* Cartes de Rôle */
+.role-card {
+    background-color: #111218;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.role-card:hover {
+    border-color: var(--orange-brand);
+}
+
+/* Timeline du processus */
+.process-timeline {
+    margin-left: 10px;
+}
+
+.dot {
+    position: absolute;
+    left: -21px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--orange-brand);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--orange-brand);
+}
+
+/* Images & mockups */
+.proj-img-shadow {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Sticky Sidebar (Le petit bloc à droite) */
+.bg-dark {
+    background-color: #111218 !important;
+}
+
+.btn-orange {
+    background-color: var(--orange-brand);
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 0.9rem;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e55a2b;
+    transform: translateY(-3px);
+    color: white;
+}

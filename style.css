@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --orange-brand: #ff6b35;
+    --dark-bg: #0a0b10;
+    --text-gray: #cfcfcf;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.info-text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-orange { color: var(--orange-brand) !important; }
+.bg-black { background-color: var(--dark-bg) !important; }
+
+.navbar {
+    background-color: rgba(10, 11, 16, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* hero section */
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: -2px;
+}
+
+.hero-outline {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+}
+
+/* button hero */
+.btn-orange {
+    background-color: var(--orange-brand);
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e55a2b;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* avatar hero */
+.custom-avatar {
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+
+/* --- BOUTONS RÉSEAUX SOCIAUX --- */
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: #111218; 
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.social-btn:hover {
+    background-color: var(--orange-brand);
+    color: white;
+    border-color: var(--orange-brand);
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(255, 107, 53, 0.4); 
+}
+
+/* Optionnel : faire tourner l'icône au survol */
+.social-btn:hover i {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+}
+
+
+/* section à propos */
+.about-section {
+    background-color: #111218; 
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    border-bottom: 2px solid var(--orange-brand);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-avatar {
+    width: 320px;
+    border-radius: 20px;
+    filter: grayscale(20%);
+}
+
+.skill-badge {
+    background-color: rgba(255,255,255,0.05);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-gray);
+}
+
+/* -----------------Section Projets------------------- */
+
+.project-card {
+    background-color: #111218;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--orange-brand);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
+}
+
+.project-img-container {
+    width: 100%;
+    height: 300px;
+    background-color: #1e1e26; 
+    overflow: hidden;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img-container img {
+    transform: scale(1.1);
+}
+
+/* Bulles d'outils (Tools) */
+.tool-badge {
+    display: inline-block;
+    background-color: rgba(255, 107, 53, 0.1);
+    color: var(--orange-brand);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-right: 5px;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.project-body p {
+    font-size: 0.9rem;
+    height: 45px; 
+}
+
+/* LES SECTIONS COMPÉTENCES, PARCOURS ET CONTACT   */ */
+
+/* --- Barres de progression --- */
+.progress {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bg-orange {
+    background-color: var(--orange-brand) !important;
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+}
+
+/* --- Système de Switch (Nav-Pills) --- */
+.nav-pills {
+    background-color: #111218;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link {
+    color: var(--text-gray);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--orange-brand) !important;
+    color: white !important;
+}
+
+/* --- Timeline (Formations) --- */
+.timeline-container {
+    padding: 20px 0;
+}
+
+.timeline-item {
+    border-left: 2px solid rgba(255, 107, 53, 0.2); 
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    border-left: 2px solid transparent; 
+}
+
+.dot-orange {
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--orange-brand);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--orange-brand);
+}
+
+/* --- Formulaires  --- */
+.form-control {
+    padding: 12px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    background-color: #16171d !important;
+    border-color: var(--orange-brand) !important;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+/* --- Utilitaires icônes --- */
+.fas {
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
